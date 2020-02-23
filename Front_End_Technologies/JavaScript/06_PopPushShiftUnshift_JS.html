@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Pop Push Shift Unshift JS</title>
+
+</head>
+
+<body>
+
+<h1>JavaScript Pop Push Shift Unshift</h1>
+
+<p id="demo1"></p>
+<br>
+<p id="demo2"></p>
+<br>
+<p id="demo3"></p>
+<br>
+<p id="demo4"></p>
+
+<!-- ALL Script JS BEGIN-->
+<script type="text/javascript">
+
+var fruits = ["Apple","Orange","Pear","Grape","Tangerine","Mango"]; // Array
+var cars = ["Volvo","Acura","Honda","Lexus","Nissan","BMW","Lamborghini","Kia"];
+
+var Girls = ["Julie","Samantha","Laura","Jill"];
+var Boys = ["Bob","Joe","Walt","Sam","Fred"];
+
+// as expected Maths are similar other langagues (+-*/)
+// document.getElementById("demo1").innerHTML = z+txt;
+
+//fruits.pop(); // quita el ultimo elemento
+//fruits.shift(); // quita el primer elemento
+//fruits.push("Cherry") // agrega el elento al final del array
+//fruits.unshift("Cherry"); // agrega el elemento al inicio del array
+
+//****************** CHANGING AND DELETING ELEMENTS ***************************
+
+//fruits[0] = 'Kiwi'; // Now Apple was changed to kiwi
+//fruits[3] = "Coco"; // Grape was changed to Coco
+
+// delete fruits[2]; // DELETE element at specified intex
+//document.getElementById("demo1").innerHTML = fruits.join("*");
+
+//****************** SPLICING ARRAY ***************************
+
+fruits.splice(2,0, "Lemon", "Banana"); // "Lemon" has been added to index [2] banana [3] that is correct with no delete elements
+//document.getElementById("demo1").innerHTML = fruits.join("*");
+
+//****************** SORTING ARRAY ***************************
+
+// cars.sort(); // from a to z
+cars.reverse(); // from z to a
+//document.getElementById("demo1").innerHTML = cars.join("*");
+
+//****************** JOIN ARRAY ***************************
+
+var combined = Girls.concat(Boys);
+document.getElementById("demo1").innerHTML = combined;
+
+// Order Precedence
+// Brackets, Exponents, division, multiplication, Addition, Subtraction
+
+</script>
+<!-- ALL Script JS END-->
+</body>
+</html>

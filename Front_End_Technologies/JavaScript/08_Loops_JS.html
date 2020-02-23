@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Loops JS</title>
+
+</head>
+
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+<script type="text/javascript">
+
+var myFor = "";
+var myFor1 = "";
+var myFor2 = "";
+var t = 0;
+var txt = "";
+var e = 0;
+var myWhile = "";
+var z = 23;
+var myDowhile = "";
+
+var person = {fname:"John", lname:"Smith", age:30};
+
+// **************** LOOP FOR ***************
+
+for(var i = 0; i < 10 ; i++){
+myFor = myFor.concat(i + ",");
+//console.log(i);
+}
+
+document.getElementById("demo1").innerHTML = myFor;
+
+// **************** LOOP FOR IN ***************
+
+for(var x in person){
+txt += person[x] + " ";
+}
+
+document.getElementById("demo2").innerHTML = txt;
+
+// **************** LOOP WHILE *************** infinite till condition
+
+while(e<20){
+myWhile = myWhile.concat(e + ",");
+
+e++;
+}
+
+document.getElementById("demo3").innerHTML = myWhile;
+
+// **************** LOOP DO WHILE *************** execute code at least once infinite till condition example if we put 23 as z value
+
+do{
+
+
+myDowhile = myDowhile.concat(z + ",");
+z++;
+
+} while (z<13);
+
+document.getElementById("demo4").innerHTML = myDowhile;
+
+// **************** LOOP BREAK *************** interrupt loop when condition mets
+
+for(var i = 0; i < 10 ; i++){
+myFor1 = myFor1.concat(i + ",");
+
+if(i === 6){
+break;
+}
+}
+document.getElementById("demo5").innerHTML = myFor1;
+
+// **************** LOOP CONTINUE *************** Skip secuense loop when condition mets
+
+for(var t = 0; t < 10 ; t++){
+
+if(t === 6){
+continue; // skip 6
+console.log("Skipping");
+}
+
+myFor2 = myFor2.concat(t + ",");
+console.log()
+
+}
+document.getElementById("demo6").innerHTML = myFor2;
+
+</script>
+
+</body>
+</html>

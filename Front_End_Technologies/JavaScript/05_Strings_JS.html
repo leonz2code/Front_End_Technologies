@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Objects JS</title>
+<script type="text/javascript">
+function cyears (form){
+form.dogage.value = form.myage.value * 7
+}
+</script>
+</head>
+
+<body>
+
+<h1>JavaScript Strings</h1>
+
+
+<p id="demo1"></p>
+<br>
+<p id="demo2"></p>
+<br>
+<p id="demo3"></p>
+<br>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+<!-- ALL Script JS BEGIN-->
+<script type="text/javascript">
+
+var studentName1 = "John Smith";
+var studentName2 = 'Roy Martin';
+var y = "we are the best \"players\" in the contry.";
+var myArray = ["Apple","Orange","Pear","Grape","Tangerine","Mango"];
+
+// as expected Maths are similar other langagues (+-*/)
+// document.getElementById("demo1").innerHTML = z+txt;
+
+
+// you can print "" or '' as long as use to surrond same and inner other 
+document.getElementById("demo1").innerHTML = 
+studentName1 + "<br>" + studentName2;
+
+//How to know lenght 
+
+document.getElementById("demo2").innerHTML =
+studentName2.length;
+
+//How to special characters, use \"players\" backslash
+document.getElementById("demo3").innerHTML =
+y;
+
+//How to ArrayAttributes this out put with coma, to specify token use .join
+document.getElementById("demo4").innerHTML =
+myArray.toString();
+
+
+document.getElementById("demo5").innerHTML =
+myArray.join("*");
+
+// How to print more than one value 
+
+//document.getElementById("demo1").innerHTML = person.firstname + " has " + person.eyecolor + " eyes. ";
+
+// Order Precedence
+// Brackets, Exponents, division, multiplication, Addition, Subtraction
+
+</script>
+<!-- ALL Script JS END-->
+</body>
+</html>

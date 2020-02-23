@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sample JS 1 Introduction</title>
+<script type="text/javascript">
+function cyears (form){
+form.dogage.value = form.myage.value * 7
+}
+</script>
+</head>
+
+<body>
+<b>Find out your age in dog years!</b>
+
+<form method="post">
+<table>
+<tr>
+<td>Enter your age:</td>
+<td><input type="text" name="myage" size="15"></td>
+</tr>
+
+<tr>
+<td>
+<input type="button" value="Calculate" onclick="cyears(this.form)">
+</td>
+</tr>
+
+<tr>
+<td>Your age in Doog Years is:</td>
+<td><input type="Text" name="dogage" size="15"></td>
+</tr>
+</table>
+</form>
+<hr />
+
+<div class="container">
+
+<p>The results will be displayed below this line</p>
+
+<script type="text/javascript">
+document.write(5 + 6);
+window.alert("aver esta cosa funciona a si ");
+</script>
+
+</div>
+
+<hr />
+
+<div>
+<p> Esta es una forma de mandar los datos a un elemento de html en especifico usando su id</p>
+<br>
+<p>El resultad es: <p id="math"></p></p>
+
+<script>
+document.getElementById("math").innerHTML= 24 / 33;
+</script>
+
+</div>
+
+</body>
+</html>

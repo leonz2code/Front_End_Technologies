@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Arithmetic_Math JS</title>
+<script type="text/javascript">
+function cyears (form){
+form.dogage.value = form.myage.value * 7
+}
+</script>
+</head>
+
+<body>
+
+<h1>JavaScript Maths</h1>
+
+<p>Working with variables</p>
+
+<p id="demo1"></p>
+<br>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+
+
+<!-- ALL Script JS BEGIN-->
+<script type="text/javascript">
+
+var x = 10;
+var y = 15;
+var z = x + y ;
+var txt = "My Text";
+var num = Math.random();
+var myArray = ["Apple","Orange","Pear","Grape","Tangerine","Mango"];
+
+var d2 = ("We can manipulate with parentheis etc") + (x*y);
+
+// as expected Maths are similar other langagues (+-*/)
+document.getElementById("demo1").innerHTML = z+txt;
+
+document.getElementById("demo2").innerHTML = d2;
+
+// Random Numbers
+document.getElementById("demo3").innerHTML = Math.random(); // decimal 
+
+// near integer .6 +1  .4 = absolute num
+document.getElementById("demo4").innerHTML = Math.round( num  * 10);
+
+// Min function Max is same 
+document.getElementById("demo5").innerHTML = Math.min( 600,300,50,-5,51,-56);
+
+// below integer will be rounded as absolute number
+document.getElementById("demo6").innerHTML = Math.floor( 15.8);
+
+// below integer will be rounded as absolute number
+document.getElementById("demo6").innerHTML = Math.floor( 15.8);
+
+// below integer will be rounded as next integer
+document.getElementById("demo7").innerHTML = Math.ceil( 15.1);
+
+//Arrays print an element by index
+document.getElementById("demo8").innerHTML = myArray[0];
+
+//Arrays print all
+document.getElementById("demo9").innerHTML = myArray;
+
+//Arrays lenght
+document.getElementById("demo10").innerHTML = myArray.length;
+
+// Order Precedence
+// Brackets, Exponents, division, multiplication, Addition, Subtraction
+
+</script>
+<!-- ALL Script JS END-->
+</body>
+</html>
